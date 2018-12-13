@@ -4,37 +4,45 @@
 		<meta charset="utf-8">
 		<title>Landing</title>
 	    <link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/changeLang.js"></script>
 	</head>
-	
-
 	<body class="ru">
+		<header>
+			<div class="container" class="ru" lang="ru">
+				<div id="logo">Consu</div>
+				<button class="btnLng"  onclick="changeLang2()">Русский</button>
+				<button class="btnRegistr">Регистрация</button>
+			</div>
+			<div class="container" class="en" lang="en">
+				<div id="logo">Consu</div>
+				<button class="btnLng"  onclick="changeLang()">English</button>
+				<button class="btnRegistr" >Registration</button>
+			</div>
+		</header>
+        <main>
+			<div id="TimerContainer" class="en" lang="en">
+				<p class="TimerLabel" >Our platform will start soon</p>
+				<p class="TimerLabel2">If you are a consultant or businessman <br>this platform is for you.</p>
+			</div>
+			<div id="TimerContainer" class="ru" lang="ru">
+				<p class="TimerLabel" >Наша платформа скоро запустится</p>
+				<p class="TimerLabel2">Если вы консультант или бизнесмен <br>эта платформа для вас</p>
+			</div>
+        </main>
 
-		<p id="logo">Consu</p>
-		<button class="s" class="en" lang="en" onclick="changeLang()">English</button>
-		<button class="s" class="ru" lang="ru" onclick="changeLang2()">Русский</button>
 
-		<button class="btnRegistr" class="en" lang="en">Registration</button>
-		<button class="btnRegistr" class="ru" lang="ru">Регистрация</button>
-		<div id="TimerContainer" class="en" lang="en">
-			<p class="TimerLabel" >Our platform will start soon</p>
-			<p class="TimerLabel2">If you are a consultant or businessman <br>this platform is for you.</p>
-
-			<p class="Timer">5&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;&nbsp;34&nbsp;&nbsp;&nbsp;14</p>
+		<!--	<p class="Timer">5&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;&nbsp;34&nbsp;&nbsp;&nbsp;14</p>
 			<ul class="timerLegend">
 			<li>Months</li>
 				<li>Days</li>&nbsp;&nbsp;&nbsp;&nbsp;
 				<li>Hours</li>
 				<li>Minutes</li>
 				<li>Second</li>
-			</p>
-		</div>
+			</p>   -->
 
-		<div id="TimerContainer" class="ru" lang="ru">
-			<p class="TimerLabel" >Наша платформа скоро запустится</p>
-			<p class="TimerLabel2">Если вы консультант или бизнесмен <br>эта платформа для вас</p>
 
-			<p class="Timer">5&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;&nbsp;34&nbsp;&nbsp;&nbsp;14</p>
+		<!--	<p class="Timer">5&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;&nbsp;34&nbsp;&nbsp;&nbsp;14</p>
 			<ul class="timerLegend">
 			<li>Месяцы</li>
 				<li>Дни</li>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,8 +50,8 @@
 				<li>Минуты</li>
 				<li>Секунды</li>
 			</p>
-		</div>
-		<img src="img/people.png" alt="" class="finishImg">
+		-->
+		<!--<img src="img/people.png" alt="" class="finishImg">-->
 
 	</body>
 </html>

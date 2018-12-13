@@ -12,22 +12,20 @@ body {
 
 
 #logo {
-    position: relative;
-    width:200px;
-    top:15px;
-    left:8%;
+margin-right:2.5%;
+    margin-top:-10px;
+    height:50px;
     font-size:30pt;
     font-weight:bold;
     color:#fff;
 }
 
-/*              Button                 */
+/*              Buttons                 */
 
 .btnRegistr {
-    position: relative;
-    top:-70px;
-    left:66%;
-    margin-left:35px;
+
+
+
     width:150px;
     height:50px;
     border:0;
@@ -39,12 +37,9 @@ body {
       -webkit-font-smoothing: antialiased;
     cursor:pointer;
 }
-.s
+.btnLng
  {
-     position: relative;
-     top:-70px;
-     left:67%;
-     margin-left:35px;
+
      width:150px;
      height:50px;
      color:#f9aa30;
@@ -53,13 +48,35 @@ body {
      border: solid 2px  #f9aa30;
 background: #313b80;
      font-weight:600;
-       -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
      cursor:pointer;
+
  }
-.chng {
-    position: relative;
-    left:-4%;
+
+ /*              Containers                 */
+
+.container {
+position: relative;
+left:8%;
+width:84%;
+    margin-top:20px;
+    display:flex;
+    height:120px;
+
+justify-content: space-around;
 }
+
+.container :first-child {
+
+}
+.container :last-child {
+
+}
+.container :nth-child(2) {
+margin-left:auto;
+margin-right:3%;
+}
+
 /*              Timer                 */
 
 .Timer {
