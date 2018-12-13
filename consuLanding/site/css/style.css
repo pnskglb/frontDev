@@ -2,6 +2,9 @@ body.en :lang(en),
 body.ru :lang(ru) {
 display: none;
 }
+
+/*     MainTags     */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
     background:#313b80;
@@ -9,7 +12,9 @@ body {
     margin:0;
     padding:0;
 }
-
+main {
+    margin-top:-40px;
+}
 
 #logo {
 margin-right:2.5%;
@@ -80,12 +85,42 @@ margin-right:3%;
 /*              Timer                 */
 
 .Timer {
-    position: relative;
-    top:-60px;
-    text-align:center;
+
+
+
     color:#678ee3;
-    font-size:65pt;
-    font-weight:bold;
+
+}
+.timerC:first-child{
+    font-size:66pt;
+
+}
+.timerC {
+
+    display:flex;
+    color:#678ee3;
+    flex-direction:row;
+justify-content:space-between;
+font-weight:bold;
+
+}
+.timerC:first-child {
+    margin:auto;
+}
+.timerC:last-child {
+
+}
+.timerC:nth-child(2) {
+font-size:20pt;
+color:white;
+margin-left:auto;
+
+
+}
+.timerC li{
+margin:auto;
+
+
 }
 .TimerLabel {
     text-align:center;
@@ -103,7 +138,7 @@ margin-right:3%;
 }
 #TimerContainer{
     position: relative;
-    top:-70px;
+
 }
 .timerLegend {
     position: relative;
@@ -114,11 +149,12 @@ margin-right:3%;
     font-weight:bold;
 
 }
+ul {
+    padding:0;
+}
 li {
-    position: relative;
-
-    display:inline;
-    margin-right:80px;
+    list-style:none;
+    padding:0;
 }
 #bg {
     position: relative;
