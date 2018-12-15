@@ -86,7 +86,8 @@ margin-right:3%;
 
 .Timer {
 
-
+margin-left:200px;
+margin-right:200px;
 
     color:#678ee3;
 
@@ -97,29 +98,80 @@ margin-right:3%;
 }
 .timerC {
 
+margin:auto;
+
     display:flex;
     color:#678ee3;
     flex-direction:row;
-justify-content:space-between;
+justify-content:space-evenly;
+
 font-weight:bold;
+
+
+}
+.timerC2 {
+
+margin:auto;
+
+    display:flex;
+    font-size:20pt;
+    color:white;
+    flex-direction:row;
+justify-content:space-around;
+margin-right:4%;
+margin-left:3%;
+font-weight:bold;
+
 
 }
 .timerC:first-child {
-    margin:auto;
+
 }
 .timerC:last-child {
 
 }
-.timerC:nth-child(2) {
-font-size:20pt;
-color:white;
-margin-left:auto;
+.timerC2 li:last-child {
+
+
+
+
+
+}
+.timerC2 li:nth-child(3) {
+
+
+
+
+
+}
+.timerC2 li:nth-child(3) {
+
+margin-left:3%;
+
+
+
+}
+.timerC2 li:first-child {
+
+
+
+
+
+}
+.timerC2 li:nth-child(2) {
+
+
+
+
+
+}
+.timerC2 li{
 
 
 }
 .timerC li{
-margin:auto;
 
+/* margin:-40px 40px; */
 
 }
 .TimerLabel {
