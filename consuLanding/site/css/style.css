@@ -1,174 +1,272 @@
-body.en :lang(en),
-body.ru :lang(ru) {
-display: none;
-}
+    body.en :lang(en),
+    body.ru :lang(ru) {
+    display: none;
+    }
 
-/*     MainTags     */
+    /*     MainTags     */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
-    background:#313b80;
-    margin:0;
-    padding:0;
-}
-main {
-    margin-top:-40px;
-}
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+        background:#313b80;
+        margin:0;
+        padding:0;
+    }
+    main {
+        margin-top:-40px;
+    }
 
-#logo {
-    margin-right:2.5%;
-    margin-top:-10px;
-    height:50px;
-    font-size:30pt;
-    font-weight:bold;
-    color:#fff;
-}
+    #logo {
+        margin-right:2.5%;
+        margin-top:-10px;
+        height:50px;
+        font-size:30pt;
+        font-weight:bold;
+        color:#fff;
+    }
 
-/*              Buttons                 */
+    /*              Buttons                 */
 
-.btnRegistr {
+    .btnRegistr {
 
-    width:150px;
-    height:50px;
-    border:0;
-    color:white;
-    border-radius:3px;
-    font-size:11pt;
-    background: #f9aa30;
-    font-weight:600;
-    -webkit-font-smoothing: antialiased;
+        width:150px;
+        height:50px;
+        border:0;
+        color:white;
+        border-radius:3px;
+        font-size:11pt;
+        background: #f9aa30;
+        font-weight:600;
+        -webkit-font-smoothing: antialiased;
+        cursor:pointer;
+    }
+    .btnLng
+     {
+
+         width:150px;
+         height:50px;
+         color:#f9aa30;
+         border-radius:3px;
+         font-size:11pt;
+         border: solid 2px  #f9aa30;
+         background: #313b80;
+         font-weight:600;
+         -webkit-font-smoothing: antialiased;
+         cursor:pointer;
+
+     }
+
+     /*              Containers                 */
+
+    .container {
+        position: relative;
+        left:8%;
+        width:84%;
+        margin-top:20px;
+        display:flex;
+        height:120px;
+        justify-content: space-around;
+    }
+
+    .container :nth-child(2) {
+        margin-left:auto;
+        margin-right:3%;
+    }
+
+    /*              Timer                 */
+
+    .Timer {
+        margin-top:-40px;
+        margin-left:200px;
+        margin-right:200px;
+        color:#678ee3;
+
+    }
+    .timerC:first-child{
+        font-size:66pt;
+
+    }
+    .timerC {
+
+        margin:auto;
+        display:flex;
+        color:#678ee3;
+        flex-direction:row;
+        justify-content:space-evenly;
+        font-weight:bold;
+
+
+    }
+    .timerC2 {
+
+        margin:auto;
+        display:flex;
+        font-size:20pt;
+        color:white;
+        flex-direction:row;
+        justify-content:space-around;
+        margin-right:4%;
+        margin-left:3%;
+        font-weight:bold;
+
+
+    }
+
+    .timerC2 li:nth-child(3) {
+
+        margin-left:3%;
+
+    }
+
+    .TimerLabel {
+        text-align:center;
+        color:#fff;
+        font-size:26pt;
+        font-weight:bold;
+    }
+    .TimerLabel2 {
+        position: relative;
+        top:-20px;
+        text-align:center;
+        color:#fff;
+        font-size:23pt;
+        font-weight:normal;
+    }
+    #TimerContainer{
+        position: relative;
+        top:-20px;
+    }
+    .timerLegend {
+        position: relative;
+        top:-150px;
+        text-align:center;
+        color:#fff;
+        font-size:18pt;
+        font-weight:bold;
+
+    }
+    ul {
+        padding:0;
+    }
+    li {
+        list-style:none;
+        padding:0;
+    }
+    #bg {
+        position: relative;
+        width:100%;
+        height:70%;
+        background-image:url(bgImage.jpg);
+        background:rgba(#0069ff, 0.67);
+    }
+
+    img{
+        position: relative;
+        left:35%;
+    }
+    .finishImg {
+        position: relative;
+        margin-top:-78px;
+        display: block;
+      height: auto;
+        left:25%;
+        max-width:50%;
+    }
+
+    /* Forms */
+    .form {
+        display:flex;
+        justify-content:center;
+    }
+    .EmailSub {
+        height:400px;
+        width:500px;
+        border-radius:4px;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background: white;
+        flex-direction:column;
+        background:url(contct.png);
+
+  background-size: auto 100%;
+    }
+    input[type="text"] {
+        height:50px;
+        border-radius: 3px;
+        outline:none;
+        border:1px solid #313b80;
+background: transparent;
+        font-size:12pt;
+        padding-left: 20px;
+        width:300px;
+        -webkit-font-smoothing: antialiased;
+        font-weight:500;
+
+        margin-bottom:15px;
+    }
+    .EmailSubInline {
+width:400px;
+        display:flex;
+     justify-content: space-evenly;
+
+     color:#313b80;
+
+        flex-direction:row;font-size:14pt;
+    }
+    #p1 {
+        margin-left:20px;
+    }
+    #p2 {
+        margin-right:20px;
+    }
+    input[type="radio"]:last-child{
+
+margin-right:10px;
+    }
+    .NameForm {
+        margin-top:30px;
+        font-size:24pt;
+        margin-bottom:0;
+        font-weight:600;
+        color:#313b80;
+
+    }
+    input[type="radio"] {
+border-radius:5px;
+ text-align:center;
+ float: left;
+   -webkit-appearance: none;
+   border: none;
+ width: 25px;
+    height: 25px;
+    background: url(r1.png) left center no-repeat;
+    background-size: 20px;
     cursor:pointer;
-}
-.btnLng
- {
-
-     width:150px;
-     height:50px;
-     color:#f9aa30;
-     border-radius:3px;
-     font-size:11pt;
-     border: solid 2px  #f9aa30;
-     background: #313b80;
-     font-weight:600;
-     -webkit-font-smoothing: antialiased;
-     cursor:pointer;
-
- }
-
- /*              Containers                 */
-
-.container {
-    position: relative;
-    left:8%;
-    width:84%;
-    margin-top:20px;
-    display:flex;
-    height:120px;
-    justify-content: space-around;
-}
-
-.container :nth-child(2) {
-    margin-left:auto;
-    margin-right:3%;
-}
-
-/*              Timer                 */
-
-.Timer {
-    margin-top:-40px;
-    margin-left:200px;
-    margin-right:200px;
-    color:#678ee3;
+    outline:none;
+    }
+    input[type="radio"]:checked {
+        width: 25px;
+           height: 25px;
+           background-size: 20px;
+    background: url(r2.png) left center no-repeat;
 
 }
-.timerC:first-child{
-    font-size:66pt;
+    input::placeholder {
 
-}
-.timerC {
+        color:#646ba2;
+    }
+    input[type=submit] {
 
-    margin:auto;
-    display:flex;
-    color:#678ee3;
-    flex-direction:row;
-    justify-content:space-evenly;
-    font-weight:bold;
-
-
-}
-.timerC2 {
-
-    margin:auto;
-    display:flex;
-    font-size:20pt;
-    color:white;
-    flex-direction:row;
-    justify-content:space-around;
-    margin-right:4%;
-    margin-left:3%;
-    font-weight:bold;
-
-
-}
-
-.timerC2 li:nth-child(3) {
-
-    margin-left:3%;
-
-}
-
-.TimerLabel {
-    text-align:center;
-    color:#fff;
-    font-size:26pt;
-    font-weight:bold;
-}
-.TimerLabel2 {
-    position: relative;
-    top:-20px;
-    text-align:center;
-    color:#fff;
-    font-size:23pt;
-    font-weight:normal;
-}
-#TimerContainer{
-    position: relative;
-    top:-20px;
-}
-.timerLegend {
-    position: relative;
-    top:-150px;
-    text-align:center;
-    color:#fff;
-    font-size:18pt;
-    font-weight:bold;
-
-}
-ul {
-    padding:0;
-}
-li {
-    list-style:none;
-    padding:0;
-}
-#bg {
-    position: relative;
-    width:100%;
-    height:70%;
-    background-image:url(bgImage.jpg);
-    background:rgba(#0069ff, 0.67);
-}
-
-img{
-    position: relative;
-    left:35%;
-}
-.finishImg {
-    position: relative;
-    margin-top:-78px;
-    display: block;
-  height: auto;
-    left:25%;
-    max-width:50%;
-
-}
+        width:300px;
+        height:55px;
+        border:0;
+        color:white;
+        border-radius:3px;
+        font-size:11pt;
+        background: #f9aa30;
+        font-weight:600;
+        -webkit-font-smoothing: antialiased;
+        cursor:pointer;
+        outline:none;
+        margin-bottom:35px;
+    }
