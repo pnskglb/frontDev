@@ -174,6 +174,7 @@
 
     /* Forms */
     .form {
+        margin-top:50px;
         display:flex;
         justify-content:center;
     }
@@ -269,4 +270,11 @@ border-radius:5px;
         cursor:pointer;
         outline:none;
         margin-bottom:35px;
+    }
+    footer {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:14pt;
+        color:white;
     }
